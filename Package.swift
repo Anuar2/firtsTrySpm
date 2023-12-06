@@ -39,7 +39,9 @@ let package = Package(
             "Kingfisher",
             "Swinject",
             "SwinjectAutoregistration",
-        ]),
+        ],
+            path: "Sources"
+        ),
     ],
     
     swiftLanguageVersions: [.v5]
