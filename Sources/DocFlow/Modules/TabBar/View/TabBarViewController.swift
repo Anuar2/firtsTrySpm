@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TabBarViewController: UITabBarController, TabBarViewInput {
+public class TabBarViewController: UITabBarController, TabBarViewInput {
 
     var output: TabBarViewOutput?
 
@@ -16,6 +16,10 @@ class TabBarViewController: UITabBarController, TabBarViewInput {
         super.viewDidLoad()
         output?.viewIsReady()
         setTabBarAppearance()
+    }
+    
+    public init(output: TabBarViewOutput? = nil) {
+        self.output = output
     }
 
 
